@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17protos/rcc/v1/rcc.proto\x12\nrcc_protos\".\n\x07\x41uthReq\x12\r\n\x05token\x18\x01 \x01(\t\x12\x14\n\x0corganization\x18\x02 \x01(\t\"\x1e\n\x0c\x41uthResponse\x12\x0e\n\x06status\x18\x01 \x01(\x08\"\x1b\n\rHealthRequest\x12\n\n\x02id\x18\x01 \x01(\t\"$\n\x0eHealthResponse\x12\x12\n\nrequest_id\x18\x01 \x01(\t\"\x0f\n\rConfigRequest\"Y\n\x0e\x43onfigResponse\x12\x18\n\x10\x66leet_config_url\x18\x01 \x01(\t\x12\x16\n\x0emap_config_url\x18\x02 \x01(\t\x12\x15\n\rmap_image_url\x18\x03 \x01(\t2\xe2\x01\n\x0cRmfRccBridge\x12?\n\x0c\x41uthenticate\x12\x13.rcc_protos.AuthReq\x1a\x18.rcc_protos.AuthResponse\"\x00\x12J\n\x0bHealthCheck\x12\x19.rcc_protos.HealthRequest\x1a\x1a.rcc_protos.HealthResponse\"\x00(\x01\x30\x01\x12\x45\n\nConfigData\x12\x19.rcc_protos.ConfigRequest\x1a\x1a.rcc_protos.ConfigResponse\"\x00\x42\x36Z4github.com/RobotixOpenSource/rmf-proto/protos/v1/rccb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17protos/rcc/v1/rcc.proto\x12\nrcc_protos\".\n\x07\x41uthReq\x12\r\n\x05token\x18\x01 \x01(\t\x12\x14\n\x0corganization\x18\x02 \x01(\t\"\x1e\n\x0c\x41uthResponse\x12\x0e\n\x06status\x18\x01 \x01(\x08\"\x1b\n\rHealthRequest\x12\n\n\x02id\x18\x01 \x01(\t\"$\n\x0eHealthResponse\x12\x12\n\nrequest_id\x18\x01 \x01(\t\"\x0f\n\rConfigRequest\"Q\n\x0e\x43onfigResponse\x12\x14\n\x0c\x66leet_config\x18\x01 \x01(\t\x12\x12\n\nmap_config\x18\x02 \x01(\t\x12\x15\n\rmap_image_url\x18\x03 \x01(\t2\xe2\x01\n\x0cRmfRccBridge\x12?\n\x0c\x41uthenticate\x12\x13.rcc_protos.AuthReq\x1a\x18.rcc_protos.AuthResponse\"\x00\x12J\n\x0bHealthCheck\x12\x19.rcc_protos.HealthRequest\x1a\x1a.rcc_protos.HealthResponse\"\x00(\x01\x30\x01\x12\x45\n\nConfigData\x12\x19.rcc_protos.ConfigRequest\x1a\x1a.rcc_protos.ConfigResponse\"\x00\x42\x36Z4github.com/RobotixOpenSource/rmf-proto/protos/v1/rccb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,7 +32,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_CONFIGREQUEST']._serialized_start=186
   _globals['_CONFIGREQUEST']._serialized_end=201
   _globals['_CONFIGRESPONSE']._serialized_start=203
-  _globals['_CONFIGRESPONSE']._serialized_end=292
-  _globals['_RMFRCCBRIDGE']._serialized_start=295
-  _globals['_RMFRCCBRIDGE']._serialized_end=521
+  _globals['_CONFIGRESPONSE']._serialized_end=284
+  _globals['_RMFRCCBRIDGE']._serialized_start=287
+  _globals['_RMFRCCBRIDGE']._serialized_end=513
 # @@protoc_insertion_point(module_scope)

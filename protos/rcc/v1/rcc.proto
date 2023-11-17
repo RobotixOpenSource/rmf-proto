@@ -30,8 +30,8 @@ message HealthResponse{
 message ConfigRequest{}
 
 message ConfigResponse{
-    string fleet_config_url = 1;
-    string map_config_url = 2;
+    string fleet_config = 1;
+    string map_config = 2;
     string map_image_url = 3;
 }
 
