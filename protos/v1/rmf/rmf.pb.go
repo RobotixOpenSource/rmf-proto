@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.25.0
 // 	protoc        v3.6.1
-// source: protos/rcc/v1/rcc.proto
+// source: protos/rcc/v1/rmf.proto
 
-package rcc
+package rmf
 
 import (
 	context "context"
@@ -41,7 +41,7 @@ type AuthReq struct {
 func (x *AuthReq) Reset() {
 	*x = AuthReq{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[0]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -54,7 +54,7 @@ func (x *AuthReq) String() string {
 func (*AuthReq) ProtoMessage() {}
 
 func (x *AuthReq) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[0]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -67,7 +67,7 @@ func (x *AuthReq) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AuthReq.ProtoReflect.Descriptor instead.
 func (*AuthReq) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{0}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *AuthReq) GetToken() string {
@@ -95,7 +95,7 @@ type AuthResponse struct {
 func (x *AuthResponse) Reset() {
 	*x = AuthResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[1]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -108,7 +108,7 @@ func (x *AuthResponse) String() string {
 func (*AuthResponse) ProtoMessage() {}
 
 func (x *AuthResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[1]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -121,7 +121,7 @@ func (x *AuthResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AuthResponse.ProtoReflect.Descriptor instead.
 func (*AuthResponse) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{1}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *AuthResponse) GetStatus() bool {
@@ -142,7 +142,7 @@ type HealthRequest struct {
 func (x *HealthRequest) Reset() {
 	*x = HealthRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[2]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -155,7 +155,7 @@ func (x *HealthRequest) String() string {
 func (*HealthRequest) ProtoMessage() {}
 
 func (x *HealthRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[2]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -168,7 +168,7 @@ func (x *HealthRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HealthRequest.ProtoReflect.Descriptor instead.
 func (*HealthRequest) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{2}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *HealthRequest) GetId() string {
@@ -189,7 +189,7 @@ type HealthResponse struct {
 func (x *HealthResponse) Reset() {
 	*x = HealthResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[3]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -202,7 +202,7 @@ func (x *HealthResponse) String() string {
 func (*HealthResponse) ProtoMessage() {}
 
 func (x *HealthResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[3]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -215,7 +215,7 @@ func (x *HealthResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HealthResponse.ProtoReflect.Descriptor instead.
 func (*HealthResponse) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{3}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *HealthResponse) GetRequestId() string {
@@ -234,7 +234,7 @@ type ConfigRequest struct {
 func (x *ConfigRequest) Reset() {
 	*x = ConfigRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[4]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -247,7 +247,7 @@ func (x *ConfigRequest) String() string {
 func (*ConfigRequest) ProtoMessage() {}
 
 func (x *ConfigRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[4]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -260,7 +260,7 @@ func (x *ConfigRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConfigRequest.ProtoReflect.Descriptor instead.
 func (*ConfigRequest) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{4}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{4}
 }
 
 type ConfigResponse struct {
@@ -276,7 +276,7 @@ type ConfigResponse struct {
 func (x *ConfigResponse) Reset() {
 	*x = ConfigResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_protos_rcc_v1_rcc_proto_msgTypes[5]
+		mi := &file_protos_rcc_v1_rmf_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -289,7 +289,7 @@ func (x *ConfigResponse) String() string {
 func (*ConfigResponse) ProtoMessage() {}
 
 func (x *ConfigResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protos_rcc_v1_rcc_proto_msgTypes[5]
+	mi := &file_protos_rcc_v1_rmf_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -302,7 +302,7 @@ func (x *ConfigResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConfigResponse.ProtoReflect.Descriptor instead.
 func (*ConfigResponse) Descriptor() ([]byte, []int) {
-	return file_protos_rcc_v1_rcc_proto_rawDescGZIP(), []int{5}
+	return file_protos_rcc_v1_rmf_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *ConfigResponse) GetFleetConfig() string {
@@ -326,11 +326,11 @@ func (x *ConfigResponse) GetMapImageUrl() string {
 	return ""
 }
 
-var File_protos_rcc_v1_rcc_proto protoreflect.FileDescriptor
+var File_protos_rcc_v1_rmf_proto protoreflect.FileDescriptor
 
-var file_protos_rcc_v1_rcc_proto_rawDesc = []byte{
+var file_protos_rcc_v1_rmf_proto_rawDesc = []byte{
 	0x0a, 0x17, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x73, 0x2f, 0x72, 0x63, 0x63, 0x2f, 0x76, 0x31, 0x2f,
-	0x72, 0x63, 0x63, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x0a, 0x72, 0x63, 0x63, 0x5f, 0x70,
+	0x72, 0x6d, 0x66, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x0a, 0x72, 0x63, 0x63, 0x5f, 0x70,
 	0x72, 0x6f, 0x74, 0x6f, 0x73, 0x22, 0x43, 0x0a, 0x07, 0x41, 0x75, 0x74, 0x68, 0x52, 0x65, 0x71,
 	0x12, 0x14, 0x0a, 0x05, 0x74, 0x6f, 0x6b, 0x65, 0x6e, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52,
 	0x05, 0x74, 0x6f, 0x6b, 0x65, 0x6e, 0x12, 0x22, 0x0a, 0x0c, 0x6f, 0x72, 0x67, 0x61, 0x6e, 0x69,
@@ -369,24 +369,24 @@ var file_protos_rcc_v1_rcc_proto_rawDesc = []byte{
 	0x22, 0x00, 0x42, 0x36, 0x5a, 0x34, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
 	0x2f, 0x52, 0x6f, 0x62, 0x6f, 0x74, 0x69, 0x78, 0x4f, 0x70, 0x65, 0x6e, 0x53, 0x6f, 0x75, 0x72,
 	0x63, 0x65, 0x2f, 0x72, 0x6d, 0x66, 0x2d, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x73, 0x2f, 0x76, 0x31, 0x2f, 0x72, 0x63, 0x63, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x74, 0x6f, 0x73, 0x2f, 0x76, 0x31, 0x2f, 0x72, 0x6d, 0x66, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x33,
 }
 
 var (
-	file_protos_rcc_v1_rcc_proto_rawDescOnce sync.Once
-	file_protos_rcc_v1_rcc_proto_rawDescData = file_protos_rcc_v1_rcc_proto_rawDesc
+	file_protos_rcc_v1_rmf_proto_rawDescOnce sync.Once
+	file_protos_rcc_v1_rmf_proto_rawDescData = file_protos_rcc_v1_rmf_proto_rawDesc
 )
 
-func file_protos_rcc_v1_rcc_proto_rawDescGZIP() []byte {
-	file_protos_rcc_v1_rcc_proto_rawDescOnce.Do(func() {
-		file_protos_rcc_v1_rcc_proto_rawDescData = protoimpl.X.CompressGZIP(file_protos_rcc_v1_rcc_proto_rawDescData)
+func file_protos_rcc_v1_rmf_proto_rawDescGZIP() []byte {
+	file_protos_rcc_v1_rmf_proto_rawDescOnce.Do(func() {
+		file_protos_rcc_v1_rmf_proto_rawDescData = protoimpl.X.CompressGZIP(file_protos_rcc_v1_rmf_proto_rawDescData)
 	})
-	return file_protos_rcc_v1_rcc_proto_rawDescData
+	return file_protos_rcc_v1_rmf_proto_rawDescData
 }
 
-var file_protos_rcc_v1_rcc_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_protos_rcc_v1_rcc_proto_goTypes = []interface{}{
+var file_protos_rcc_v1_rmf_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_protos_rcc_v1_rmf_proto_goTypes = []interface{}{
 	(*AuthReq)(nil),        // 0: rcc_protos.AuthReq
 	(*AuthResponse)(nil),   // 1: rcc_protos.AuthResponse
 	(*HealthRequest)(nil),  // 2: rcc_protos.HealthRequest
@@ -394,7 +394,7 @@ var file_protos_rcc_v1_rcc_proto_goTypes = []interface{}{
 	(*ConfigRequest)(nil),  // 4: rcc_protos.ConfigRequest
 	(*ConfigResponse)(nil), // 5: rcc_protos.ConfigResponse
 }
-var file_protos_rcc_v1_rcc_proto_depIdxs = []int32{
+var file_protos_rcc_v1_rmf_proto_depIdxs = []int32{
 	0, // 0: rcc_protos.RmfRccBridge.Authenticate:input_type -> rcc_protos.AuthReq
 	2, // 1: rcc_protos.RmfRccBridge.HealthCheck:input_type -> rcc_protos.HealthRequest
 	4, // 2: rcc_protos.RmfRccBridge.ConfigData:input_type -> rcc_protos.ConfigRequest
@@ -408,13 +408,13 @@ var file_protos_rcc_v1_rcc_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_protos_rcc_v1_rcc_proto_init() }
-func file_protos_rcc_v1_rcc_proto_init() {
-	if File_protos_rcc_v1_rcc_proto != nil {
+func init() { file_protos_rcc_v1_rmf_proto_init() }
+func file_protos_rcc_v1_rmf_proto_init() {
+	if File_protos_rcc_v1_rmf_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_protos_rcc_v1_rcc_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AuthReq); i {
 			case 0:
 				return &v.state
@@ -426,7 +426,7 @@ func file_protos_rcc_v1_rcc_proto_init() {
 				return nil
 			}
 		}
-		file_protos_rcc_v1_rcc_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AuthResponse); i {
 			case 0:
 				return &v.state
@@ -438,7 +438,7 @@ func file_protos_rcc_v1_rcc_proto_init() {
 				return nil
 			}
 		}
-		file_protos_rcc_v1_rcc_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HealthRequest); i {
 			case 0:
 				return &v.state
@@ -450,7 +450,7 @@ func file_protos_rcc_v1_rcc_proto_init() {
 				return nil
 			}
 		}
-		file_protos_rcc_v1_rcc_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HealthResponse); i {
 			case 0:
 				return &v.state
@@ -462,7 +462,7 @@ func file_protos_rcc_v1_rcc_proto_init() {
 				return nil
 			}
 		}
-		file_protos_rcc_v1_rcc_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ConfigRequest); i {
 			case 0:
 				return &v.state
@@ -474,7 +474,7 @@ func file_protos_rcc_v1_rcc_proto_init() {
 				return nil
 			}
 		}
-		file_protos_rcc_v1_rcc_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_protos_rcc_v1_rmf_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ConfigResponse); i {
 			case 0:
 				return &v.state
@@ -491,20 +491,20 @@ func file_protos_rcc_v1_rcc_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_protos_rcc_v1_rcc_proto_rawDesc,
+			RawDescriptor: file_protos_rcc_v1_rmf_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_protos_rcc_v1_rcc_proto_goTypes,
-		DependencyIndexes: file_protos_rcc_v1_rcc_proto_depIdxs,
-		MessageInfos:      file_protos_rcc_v1_rcc_proto_msgTypes,
+		GoTypes:           file_protos_rcc_v1_rmf_proto_goTypes,
+		DependencyIndexes: file_protos_rcc_v1_rmf_proto_depIdxs,
+		MessageInfos:      file_protos_rcc_v1_rmf_proto_msgTypes,
 	}.Build()
-	File_protos_rcc_v1_rcc_proto = out.File
-	file_protos_rcc_v1_rcc_proto_rawDesc = nil
-	file_protos_rcc_v1_rcc_proto_goTypes = nil
-	file_protos_rcc_v1_rcc_proto_depIdxs = nil
+	File_protos_rcc_v1_rmf_proto = out.File
+	file_protos_rcc_v1_rmf_proto_rawDesc = nil
+	file_protos_rcc_v1_rmf_proto_goTypes = nil
+	file_protos_rcc_v1_rmf_proto_depIdxs = nil
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -689,5 +689,5 @@ var _RmfRccBridge_serviceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "protos/rcc/v1/rcc.proto",
+	Metadata: "protos/rcc/v1/rmf.proto",
 }

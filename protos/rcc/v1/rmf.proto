@@ -1,7 +1,7 @@
 syntax = "proto3";
 package rcc_protos;
 
-option go_package = "github.com/RobotixOpenSource/rmf-proto/protos/v1/rcc";
+option go_package = "github.com/RobotixOpenSource/rmf-proto/protos/v1/rmf";
 
 service RmfRccBridge{
     rpc Authenticate(AuthReq) returns (AuthResponse){}
