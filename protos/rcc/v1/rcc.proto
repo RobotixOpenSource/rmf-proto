@@ -1,0 +1,37 @@
+syntax = "proto3";
+package rcc_protos;
+
+option go_package = "github.com/RobotixOpenSource/rmf-proto/protos/v1/rcc";
+
+service RmfRccBridge{
+    rpc Authenticate(AuthReq) returns (AuthResponse){}
+    rpc HealthCheck(stream HealthRequest) returns (stream HealthResponse){}
+    rpc ConfigData(ConfigRequest) returns(ConfigResponse){}
+}
+
+
+message AuthReq{
+    string token = 1;
+    string organization = 2;
+}
+
+message AuthResponse{
+    bool status = 1;
+}
+
+message HealthRequest{
+    string id = 1;
+}
+
+message HealthResponse{
+    string request_id = 1;
+}
+
+message ConfigRequest{}
+
+message ConfigResponse{
+    string fleet_config_url = 1;
+    string map_config_url = 2;
+    string map_image_url = 3;
+}
+
